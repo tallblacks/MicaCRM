@@ -1,0 +1,50 @@
+ul {margin:0; padding:0;}
+a{ text-decoration:none}
+a:link{ text-decoration:none}
+.tap_box{ float:left; width:650px; height:44px; margin-left:50px;_display:inline; margin-top:20px}
+html>body .tap_box li{ background:url(../images/hp/tap_1.png) no-repeat; float:left;  text-align:center; width:117px; color:#fff; font-size:16px; line-height:40px; font-weight:bold; height:41px; margin-right:6px;_display:inline;} /* FF，Opera */
+*html .tap_box li{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://images.ihaomy.com/images/hp/tap_1.png"); 
+	 float:left;  text-align:center; width:117px; color:#fff; font-size:16px; line-height:40px; font-weight:bold; height:41px; margin-right:6px;_display:inline;} /* IE5.5+～IE7+ */
+html>body .tap_box li.hover{ float:left; background:url(../images/hp/tap_2.png) no-repeat; color:#FF6600; width:117px; height:41px} /* FF，Opera */
+*html .tap_box li.hover{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://images.ihaomy.com/images/hp/tap_2.png"); 
+	 color:#FF6600; width:117px; height:41px} /* IE5.5+～IE7+ */
+.ihaomy_all_right_ad_co h3{ float:left; font-size:12px; width:210px; margin:10px;_display:inline;}
+.ihaomy_all_right_ad_co span.sin{ float:left; width:210px; font-size:12px; color:#666; margin-left:10px;_display:inline;}
+.ihaomy_all_right_ad_co span b.si{ color:#FF3300; float:none;}
+.ihaomy_all_right_cou{ margin-top:20px;}
+.tap_box_show{ float:left; width:677px; margin-left:20px; margin-top:-2px;}
+html>body  .tap_box_show_top{  float:left; background:url(../images/hp/tap_3.png) no-repeat; width:677px; height:16px;} /* FF，Opera */
+
+*html .tap_box_show_top{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="images/hp/tap_3.png"); 
+	  width:677px; height:16px;} /* IE5.5+～IE7+ */
+.tap_box_show_co{ float:left; width:637px; background:url(../images/hp/tap_5.jpg) repeat-y; padding:10px 20px;_display:inline;}
+.tap_box_show_co h1 span.my{ float:left; font-size:22px; font-weight:bold; line-height:22px; margin-bottom:5px}
+.tap_box_show_co h1 span.tips{ float:right; font-size:12px; line-height:22px; margin-bottom:5px}
+.tap_box_show_co h1{ float:left; width:640px; border-bottom:1px dashed #ec6200; margin-top:0px;}
+.tap_box_show_co h1 span{ float:right; width:250px; margin:0; font-weight:lighter; font-size:12px}
+.tap_box_show_co h1 span b{ float:left; margin-right:5px; line-height:22px; padding:3px; color:#FF3300;_display:inline;  font-weight:lighter;}
+.tap_box_show_co h1 span b.hover4{ float:left; line-height:22px; padding:3px; _display:inline; background:#FF3300; color:#fff; font-weight:lighter;}
+.tap_box_show_co h1 span b.tit1{ color:#000; font-weight:lighter;}
+.tap_box_show_co p{ float:left; width:600px; line-height:18px; margin-top:20px;_display:inline;}
+.tap_box_show_co p span.say{ color:#FF9900;}
+.tap_box_show_co p span.say a:link,  .tap_box_show_co p span.say a:visited{color:#FF9900; text-decoration:none; }
+.tap_box_show_co p span.say a:hover,  .tap_box_show_co p span.say a:active{color:#FF9900; text-decoration:underline;}
+html>body  .tap_box_show_bo{  float:left; background:url(../images/hp/tap_4.png) no-repeat; width:677px; height:16px;} /* FF，Opera */
+*html .tap_box_show_bo{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="images/hp/tap_4.png"); 
+	  width:677px; height:16px;} /* IE5.5+～IE7+ */
+.tap_box_show_co_feedback{ float:left; width:630px; font-size:14px; margin:10px 0;_display:inline;}	  
+.tap_box_show_co_order{ float:left; width:630px; font-size:14px; font-weight:bold; margin:10px 0;_display:inline;}
+.tap_box_show_co_order1{ float:left; width:630px; font-size:14px;font-weight:bold; margin:10px 0;_display:inline; background:#FFE6C4;}
+.font13{ color:#999999;}
+.tap_box_show_co_order2{ float:left; width:610px; background:#FFFF99; height:40px; line-height:40px;  padding-left:20px;_display:inline; font-size:14px; font-weight:bold; margin:30px 0;}
+.tap_box_show_co_order2 h2{ float:left; width:600px;color:#333; font-weight:lighter; font-size:14px; margin:0;}
+.tap_box_show_co_order2 h2 span{ color:#FF9900; padding-left:10px; font-weight:bold;_display:inline;}
+.tap_box_show_co_order2 h2 span a:link, .tap_box_show_co_order2 h2 span a:visited{color:#FF9900; text-decoration:none; }
+.tap_box_show_co_order2 h2 span a:hover, .tap_box_show_co_order2 h2 span a:active{color:#FF9900; text-decoration:underline;}
+.tap_box_show_co h2{ float:left; width:600px; font-size:15px; margin-top:0px;}
+.tap_box_show_co h2 span.red1{ padding:0 5px; font-size:22px; color:#FF0000; padding-left:5px;}
+.tap_box_show_co h2 span.red1 a:link, .tap_box_show_co h2 span.red1 a:visited{color:#FF9900; text-decoration:none; }
+.tap_box_show_co h2 span.red1 a:hover, .tap_box_show_co h2 span.red1 a:active{color:#FF9900; text-decoration:underline;}
+.ihaomy_all_right_ad_co span b.si{ color:#FF3300; float:none;}
+.ihaomy_all_right_ad_co span b.si a:link,  .ihaomy_all_right_ad_co span b.si a:visited{color:#FF9900; text-decoration:none; }
+.ihaomy_all_right_ad_co span b.si a:hover,  .ihaomy_all_right_ad_co span b.si a:active{color:#FF9900; text-decoration:underline;}

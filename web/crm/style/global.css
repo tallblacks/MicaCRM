@@ -1,0 +1,10 @@
+/* global styles */
+.cur {font-family: 宋体; font-size: 14.8px; color: #ff0000}
+.chn {font-family: 宋体; font-size: 12px}
+.bhn {font-family: 宋体; font-size: 12px; font-weight: bold}
+.hdr {font-family: 宋体; font-size: 15px; font-weight: bold}
+.itm {font-family: 宋体; font-size: 12px}
+.eng {font-family: Arial, Helvetica,宋体; font-size: 12px}
+.bng {font-family: Arial, Helvetica,宋体; font-size: 12px; font-weight: bold}
+.line {font-family: 宋体, Arial Narrow, Times New Roman; font-size: 14.8px;line-height:1.4; color: black}
+.tine {font-family: 宋体, Arial Narrow, Times New Roman; font-size: 14.8px;line-height:1.4}			

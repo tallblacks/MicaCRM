@@ -1,0 +1,31 @@
+ul {margin:0; padding:0;}
+a{ text-decoration:none}
+a:link{ text-decoration:none}
+.ihaomy_all{ margin:0 auto; width:980px;}
+.shoppingbox{ float:left; width:910px; background:#fff; margin-left:5px; padding:10px 0px 10px 8px;_display:inline }
+.shoppingbox01{ float:left; width:910px; margin-left:5px; _display:inline }
+.shoppingbox01 span{ float:left; margin-right:20px;_display:inline }
+.shoppingbox img{ float:left}
+.shoppingbox02{ float:left; margin:10px 0px 0px 5px;_display:inline }
+.shoppingbox_end{ float:left; width:330px; border-bottom:1px dashed #CCC;border-right:1px dashed #CCC; padding-left:10px; _display:inline padding-bottom:20px;}
+.shoppingbox_end h1{ float:left; font-size:16px; width:300px; margin:10px 0px 10px 6px;_display:inline}
+.shoppingbox_end h2{ float:left; color:#999; font-size:14px; width:300px;_display:inline margin-left:6px; margin-top:0px; margin-bottom:0;}
+.shoppingbox_end span{ float:left; margin:5px;}
+.shoppingbox_end span img{ float:left; width:200px; height:190px;}
+.shoppingbox_end span.bay{ float:left; width:100px; font-size:14px; _display:inlinemargin:2px 0px 2px 6px;} 
+.shoppingbox_end span b{ color:#990000; font-size:18px; font-family:Arial, Helvetica, sans-serif}  
+.shoppingbox_end span b.black{ color:#000; font-size:18px; font-family:Arial, Helvetica, sans-serif}
+.newsbox{ float:left; width:670px; margin:5px 0px 10px 5px;_display:inline}
+.newsbox h1{ float:left; width:650px; color:#CD491D; font-size:16px;}
+.newsbox h1 a:link, .newsbox h1 a:visited{color:#CD491D; text-decoration:none; }
+.newsbox h1 a:hover, .newsbox h1 a:active{color:#CD491D; text-decoration:underline;}
+.newsbox h1 span{ float:none; color:#CCC; padding-left:10px; _display:inlinefont-size:12px;}
+.newsbox p{ float:left; color:#999; line-height:18px; width:650px;}
+.newsbox span.xx{ float:right; margin-right:20px; width:100px; color:#FF3300;}
+.newsbox span.xx a:link, .newsbox span.xx a:visited{color:#FF3300; text-decoration:none; }
+.newsbox span.xx a:hover, .newsbox span.xx a:active{color:#FF3300; text-decoration:underline;}
+.newsbox h3{ float:left; width:690px; text-align:center; color:#CD491D; font-size:23px; font-family:"微软雅黑";}
+.newsbox h4{ float:left; width:690px; text-align:center; color:#999; font-size:14px; margin:9px 0;_display:inline}
+.newsbox3{ float:left; width:690px;}
+.newsbox3 p.nr{ float:left; line-height:24px; width:660px; font-size:14px; color:#333; text-indent:25px; margin-left:10px;_display:inline}
+.shoppingbox02 span{ float:left;margin:5px 9px 0px 0px;_display:inline}

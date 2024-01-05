@@ -1,0 +1,25 @@
+ul {margin:0; padding:0;}
+a{ text-decoration:none}
+a:link{ text-decoration:none}
+.ihaomy_topbox{ margin:0  auto; width:980px; height:149px;}
+.todayhappy_co_last{ float:left; border:2px solid #ec6200; border-bottom:none; border-top:none;background:#fff; width:715px;font-size:14px;}
+.im_left_last{ float:left; width:500px;  margin-left:10px;_display:inline;}
+.im_left_last h3{ float:left; width:460px; font-size:16px; margin-left:30px;_display:inline; margin-top:10px; margin-bottom:10px;}
+.im_left_last p{ float:left; line-height:20px; width:430px; margin:0px 0px 0px 30px;_display:inline; margin-bottom:8px;}
+.im_left_last li, .im_left_last_tb li{ float:left; width:410px; list-style-position:outside; list-style-type:disc; line-height:20px; margin-left:40px; margin-bottom:5px;} .im_left_last img{ float:left; margin:20px 0px 20px 30px;_display:inline;}
+.im_left_last p span{ color:#CC6600; float:none}
+.im_left_last p span a:link, .im_left_last p span a:visited{color:#CC6600; text-decoration:none; }
+.im_left_last p span a:hover, .im_left_last p span a:active{color:#CC6600; text-decoration:underline;}
+.im_left_last_tb{ float:left; width:490px; margin-bottom:10px;_display:inline;}
+.im_left_last_tb h4{ float:left; font-size:16px; width:470px; margin-left:20px;_display:inline;}
+.im_left_last_say li{ float:left; background:url(../images/hp/quote.gif) no-repeat scroll 0 2px transparent; list-style:none; width:440px; padding-left:20px; line-height:20px; margin-left:30px;_display:inline;}
+.im_left_last_say li span.writer{ float:right; width:250px; text-align:right;}
+.im_left_last_say li span b{ font-weight:lighter;color:#CC6600; padding:0 2px;}
+.im_left_last_say li span b a:link,   .im_left_last_say li span b a:visited{color:#CC6600; text-decoration:none; }
+.im_left_last_say li span b a:hover,   .im_left_last_say li span b a:active{color:#CC6600; text-decoration:underline;}
+.im_right_last{ float:left; width:203px;}
+.im_right_last h3{ float:left; width:180px; font-size:16px; margin-left:10px; margin-top:8px; margin-bottom:10px;_display:inline;}
+.im_right_last p{ float:left; line-height:20px; width:180px; margin:0px 0px 0px 10px;_display:inline; margin-bottom:8px;}
+.im_right_last p span{ color:#CC6600; float:none}
+.im_right_last p span a:link, .im_right_last p span a:visited{color:#CC6600; text-decoration:none; }
+.im_right_last p span a:hover, .im_right_last p span a:active{color:#CC6600; text-decoration:underline;}
