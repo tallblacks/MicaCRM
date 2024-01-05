@@ -2,6 +2,7 @@ version: "3"
 services:
   web-crm:
     build: .
+    hostname: crm.nzshop.cn
     expose:
       - 8080
     ports:
