@@ -22,7 +22,7 @@ services:
       - .:/var/www/html
     container_name: web-crm-container
   db:
-    image: mariadb:11.2.2
+    image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: nz21usana
       MYSQL_DATABASE: fpcrm
@@ -33,6 +33,6 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - /data/DB_Backup:/backup
-    container_name: mariadb-container
+    container_name: mysql-container
 volumes:
   db_data:
