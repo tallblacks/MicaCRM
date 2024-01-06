@@ -73,11 +73,6 @@ class cDatabase {
         // }
         $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
         $this->link_id = $link;
-        print("No?");
-        print($this->link_id);
-        print("=====");
-        print_r($this->link_id);
-
 
         if (!empty($db_name)) {
            mysqli_select_db($this->link_id,$db_name);
@@ -147,9 +142,17 @@ class cDatabase {
 
    function pconnect($db_name = '')
    {
-       if (!$this->link_id = mysql_pconnect($this->db_host, $this->db_username, $this->db_password)) {
-           die($strings['ERROR_SQL_CONNECT']);
-       }
+       // 2024-01-06 Levin
+       // 变量 $this->link_id 初始化
+       //if (!$this->link_id = mysql_pconnect($this->db_host, $this->db_username, $this->db_password)) {
+       //    die($strings['ERROR_SQL_CONNECT']);
+       //}
+       $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
+       $this->link_id = $link;
+       print("No?");
+       print($this->link_id);
+       print("=====");
+       print_r($this->link_id);
 
        if (!empty($db_name)) {
            mysql_select_db($db_name, $this->link_id) or $this->sql_error();
