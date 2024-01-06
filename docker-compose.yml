@@ -20,6 +20,8 @@ services:
       - "8080:8080"
     volumes:
       - .:/var/www/html
+    depends_on:
+      - db
     container_name: web-crm-container
   db:
     image: mariadb:10.4
