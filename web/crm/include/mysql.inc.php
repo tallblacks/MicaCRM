@@ -68,11 +68,11 @@ class cDatabase {
     {
         // 2024-01-06 Levin
         // 变量 $this->link_id 初始化
-        // if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
-        //      die($strings['ERROR_SQL_CONNECT']);
-        // }
-        $link = mysqli_connect("localhost", "username", "password", "database_name");
-        $this->link_id = $link;
+        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
+             die($strings['ERROR_SQL_CONNECT']);
+        }
+        // $link = mysqli_connect("localhost", "username", "password", "database_name");
+        // $this->link_id = $link;
 
 
         if (!empty($db_name)) {
