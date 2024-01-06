@@ -160,11 +160,11 @@ class cDatabase {
         }
 
         
-        if (!$this->link_id = mysqli_connect('db', 'fpcrmuser', 'lc100purenz', 'fpcrm')) {
-            die("Connection failed: " . mysqli_connect_error());
-        } else {
-            echo "Connected successfully".DB_HOST;
-        }
+        //if (!$this->link_id = mysqli_connect('db', 'fpcrmuser', 'lc100purenz', 'fpcrm')) {
+        //    die("Connection failed: " . mysqli_connect_error());
+        //} else {
+        //    echo "Connected successfully".DB_HOST;
+        //}
 
         // 2024-01-06 Levin
         // 在 MariaDB 5.7 中，mysqli_query() 函数被废弃，改为使用mysqli_stmt_execute() 函数。
