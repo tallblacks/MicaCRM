@@ -159,8 +159,15 @@ class cDatabase {
             fwrite($this->fp, $this->format_date() . " Query: $sql_query\n");
         }
 
-        mysqli_query($this->link_id, 'set names utf8');
-        $result = mysqli_query($this->link_id, $sql_query);
+        // 2024-01-06 Levin
+        // 在 MariaDB 5.7 中，mysqli_query() 函数被废弃，改为使用mysqli_stmt_execute() 函数。
+        // mysqli_query($this->link_id, 'set names utf8');
+        // $result = mysqli_query($this->link_id, $sql_query);
+        $stmt = mysqli_prepare($this->link_id, 'set names utf8');
+        mysqli_stmt_execute($stmt);
+        $stmt = mysqli_prepare($this->link_id, $sql_query);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
         if (!$result) {
             $this->sql_error($sql_query);
         }
