@@ -68,11 +68,11 @@ class cDatabase {
     {
         // 2024-01-06 Levin
         // 变量 $this->link_id 初始化
-        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
-             die($strings['ERROR_SQL_CONNECT']);
-        }
-        // $link = mysqli_connect("localhost", "username", "password", "database_name");
-        // $this->link_id = $link;
+        // if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
+        //      die($strings['ERROR_SQL_CONNECT']);
+        // }
+        $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
+        $this->link_id = $link;
 
 
         if (!empty($db_name)) {
@@ -166,13 +166,13 @@ class cDatabase {
 
         // 2024-01-06 Levin
         // 在 MariaDB 5.7 中，mysqli_query() 函数被废弃，改为使用mysqli_stmt_execute() 函数。
-        mysqli_query($this->link_id, 'set names utf8');
-        $result = mysqli_query($this->link_id, $sql_query);
-        ///$stmt = mysqli_stmt_prepare($this->link_id, 'set names utf8');
-        ///mysqli_stmt_execute($stmt);
-        ///$stmt = mysqli_stmt_prepare($this->link_id, $sql_query);
-        ///mysqli_stmt_execute($stmt);
-        ///$result = mysqli_stmt_get_result($stmt);
+        // mysqli_query($this->link_id, 'set names utf8');
+        // $result = mysqli_query($this->link_id, $sql_query);
+        $stmt = mysqli_stmt_prepare($this->link_id, 'set names utf8');
+        mysqli_stmt_execute($stmt);
+        $stmt = mysqli_stmt_prepare($this->link_id, $sql_query);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
         ////$stmt = mysqli_stmt_init($this->link_id);
         ////mysqli_stmt_prepare($stmt, 'set names utf8');
         ////mysqli_stmt_execute($stmt);
