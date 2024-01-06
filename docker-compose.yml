@@ -1,7 +1,18 @@
 version: "3"
 services:
+  web-nzshop:
+    image: topstory/nzshop-web:1.0
+    expose:
+      - 80
+    ports:
+      - "80:80"
+    volumes:
+      - /data/nzshop.cn:/usr/share/nginx/html
+    container_name: nzshop-container
   web-crm:
-    build: .
+    build:
+      context: /data/MicaCRM
+      dockerfile: Dockerfile
     hostname: crm.nzshop.cn
     expose:
       - 8080
