@@ -160,7 +160,7 @@ class cDatabase {
         }
 
         
-        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
+        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, 'fpcrm')) {
             die("Connection failed: " . mysqli_connect_error());
         } else {
             echo "Connected successfully";
