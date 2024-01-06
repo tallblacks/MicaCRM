@@ -73,6 +73,9 @@ class cDatabase {
         // }
         $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
         $this->link_id = $link;
+        print("No?");
+        print($this->link_id);
+        print("=====");
         print_r($this->link_id);
 
 
