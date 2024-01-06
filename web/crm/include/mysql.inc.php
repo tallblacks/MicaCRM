@@ -66,13 +66,9 @@ class cDatabase {
 
     function connect($db_name = '')
     {
-        // 2024-01-06 Levin
-        // 变量 $this->link_id 初始化
-        // if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
-        //      die($strings['ERROR_SQL_CONNECT']);
-        // }
-        $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
-        $this->link_id = $link;
+        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
+             die($strings['ERROR_SQL_CONNECT']);
+        }
 
         if (!empty($db_name)) {
            mysqli_select_db($this->link_id,$db_name);
@@ -142,17 +138,9 @@ class cDatabase {
 
    function pconnect($db_name = '')
    {
-       // 2024-01-06 Levin
-       // 变量 $this->link_id 初始化
-       //if (!$this->link_id = mysql_pconnect($this->db_host, $this->db_username, $this->db_password)) {
-       //    die($strings['ERROR_SQL_CONNECT']);
-       //}
-       $link = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name);
-       $this->link_id = $link;
-       print("No?");
-       print($this->link_id);
-       print("=====");
-       print_r($this->link_id);
+       if (!$this->link_id = mysql_pconnect($this->db_host, $this->db_username, $this->db_password)) {
+           die($strings['ERROR_SQL_CONNECT']);
+       }
 
        if (!empty($db_name)) {
            mysql_select_db($db_name, $this->link_id) or $this->sql_error();
@@ -173,19 +161,19 @@ class cDatabase {
 
         // 2024-01-06 Levin
         // 在 MariaDB 5.7 中，mysqli_query() 函数被废弃，改为使用mysqli_stmt_execute() 函数。
-        // mysqli_query($this->link_id, 'set names utf8');
-        // $result = mysqli_query($this->link_id, $sql_query);
+        mysqli_query($this->link_id, 'set names utf8');
+        $result = mysqli_query($this->link_id, $sql_query);
         ///$stmt = mysqli_stmt_prepare($this->link_id, 'set names utf8');
         ///mysqli_stmt_execute($stmt);
         ///$stmt = mysqli_stmt_prepare($this->link_id, $sql_query);
         ///mysqli_stmt_execute($stmt);
         ///$result = mysqli_stmt_get_result($stmt);
-        $stmt = mysqli_stmt_init($this->link_id);
-        mysqli_stmt_prepare($stmt, 'set names utf8');
-        mysqli_stmt_execute($stmt);
-        mysqli_stmt_prepare($stmt, $sql_query);
-        mysqli_stmt_execute($stmt);
-        $result = mysqli_stmt_get_result($stmt);
+        ////$stmt = mysqli_stmt_init($this->link_id);
+        ////mysqli_stmt_prepare($stmt, 'set names utf8');
+        ////mysqli_stmt_execute($stmt);
+        ////mysqli_stmt_prepare($stmt, $sql_query);
+        ////mysqli_stmt_execute($stmt);
+        ////$result = mysqli_stmt_get_result($stmt);
         if (!$result) {
             $this->sql_error($sql_query);
         }
