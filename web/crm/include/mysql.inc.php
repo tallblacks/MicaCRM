@@ -159,6 +159,13 @@ class cDatabase {
             fwrite($this->fp, $this->format_date() . " Query: $sql_query\n");
         }
 
+        
+        if (!$this->link_id = mysqli_connect($this->db_host, $this->db_username, $this->db_password, $db_name)) {
+            die("Connection failed: " . mysqli_connect_error());
+        } else {
+            echo "Connected successfully";
+        }
+
         // 2024-01-06 Levin
         // 在 MariaDB 5.7 中，mysqli_query() 函数被废弃，改为使用mysqli_stmt_execute() 函数。
         mysqli_query($this->link_id, 'set names utf8');
