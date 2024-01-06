@@ -1,7 +1,8 @@
 <?php
     //database configuration variables
     // define('DB_HOST', 'localhost');  // hostname of database
-    define('DB_HOST', 'db'); 
+    // define('DB_HOST', 'db'); 
+    define('DB_HOST', 192.168.240.3); 
     define('DB_USERNAME', 'fpcrmuser');   // username of database
     define('DB_PASSWORD', 'lc100purenz');       // password of databsae
     define('DEFAULT_DB', 'fpcrm');     // database of database
