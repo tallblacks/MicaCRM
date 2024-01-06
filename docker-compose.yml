@@ -22,7 +22,7 @@ services:
       - .:/var/www/html
     container_name: web-crm-container
   db:
-    image: mysql:8.0
+    image: mysql:8.2
     environment:
       MYSQL_ROOT_PASSWORD: nz21usana
       MYSQL_DATABASE: fpcrm
