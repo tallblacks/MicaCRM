@@ -32,6 +32,7 @@ services:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+      - /data/DB_Backup:/backup
     container_name: mariadb-container
 volumes:
   db_data:
