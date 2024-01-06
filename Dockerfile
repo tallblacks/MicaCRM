@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:7.2-apache
 
 # 安装 MySQLi 扩展和 MariaDB 客户端工具
 RUN docker-php-ext-install mysqli \
