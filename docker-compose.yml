@@ -23,6 +23,8 @@ services:
     depends_on:
       - db
     container_name: web-crm-container
+    env_file:
+      - .env
   db:
     image: mariadb:10.4
     environment:
