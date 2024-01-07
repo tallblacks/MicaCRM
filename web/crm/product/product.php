@@ -22,6 +22,10 @@
     if (empty($range)) {
         $range = 10;
     }
+
+    if (empty($start)) {
+	$start = 0;
+    }
   
     if ($dosearch) {
         $search = trim($_POST["search"]);
