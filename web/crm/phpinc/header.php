@@ -24,7 +24,7 @@
  		        <td align=center><a href=/logistics/index.php target=main><img src=/images/column4.jpg border=0></a></td>
  		        <td align=center><a href=/constants/index.php target=main><img src=/images/column5.jpg border=0></a></td>
  		        <td align=center><a href=/user/index.php target=main><img src=/images/column6.jpg border=0></a></td>
- 		        <td align=center><a href=/wechatlog/index.php target=main><img src=/images/column7.jpg border=0></a></td>
+ 		        <!-- td align=center><a href=/wechatlog/index.php target=main><img src=/images/column7.jpg border=0></a></td -->
  		        <?php }?>
  		        <td align=center><a href=/user/logout.php target=_top><img src=/images/exit.jpg width="40" height="40" border=0></a></td>
  		    </tr>
