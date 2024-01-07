@@ -20,9 +20,13 @@
   	$range = trim(@$_GET["range"]);
   	$msg = trim(@$_GET["msg"]);
 
-  	if(empty($range)){
+    if(empty($range)){
     	$range = 15;
-  	}
+    }
+
+    if (empty($start)) {
+	$start = 0;
+    }
 	
 	$type = 0;
 	$db = new cDatabase;
