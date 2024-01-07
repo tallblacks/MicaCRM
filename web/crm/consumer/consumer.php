@@ -30,6 +30,10 @@
     if (empty($range)) {
       $range = 15;
     }
+
+    if (empty($start)) {
+	$start = 0;
+    }
   
     $doSearch = trim(@$_POST["dosearch"]);
     if ($doSearch) {
