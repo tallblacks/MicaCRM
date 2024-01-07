@@ -3,8 +3,6 @@
     // define('DB_HOST', 'localhost');  // hostname of database
     // define('DB_HOST', '192.168.240.3'); 
     define('DB_HOST', getenv('DB_HOST')); 
-    echo 'Here:';
-    echo getenv('DB_USERNAME');
     define('DB_USERNAME', getenv('DB_USERNAME'));   // username of database
     define('DB_PASSWORD', getenv('DB_PASSWORD'));       // password of databsae
     define('DEFAULT_DB', getenv('DEFAULT_DB'));     // database of database
