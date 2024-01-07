@@ -1,11 +1,11 @@
 <?php
     //database configuration variables
     // define('DB_HOST', 'localhost');  // hostname of database
-    define('DB_HOST', 'db'); 
     // define('DB_HOST', '192.168.240.3'); 
-    define('DB_USERNAME', 'fpcrmuser');   // username of database
-    define('DB_PASSWORD', 'lc100purenz');       // password of databsae
-    define('DEFAULT_DB', 'fpcrm');     // database of database
+    define('DB_HOST', getenv('DB_HOST')); 
+    define('DB_USERNAME', getenv('DB_USERNAME'));   // username of database
+    define('DB_PASSWORD', getenv('DB_PASSWORD'));       // password of databsae
+    define('DEFAULT_DB', getenv('DEFAULT_DB'));     // database of database
     define('DB_TYPE', 'mysql');         // type of databsae
     define('DB_USE_PCONNECT', 1);     // set this to 0 if your database doesn't support persistent connections
 
