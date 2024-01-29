@@ -93,7 +93,11 @@
     $suborderManager = new cSuborderPeer;
     $suborderCount = 0;
 	$suborderList = $suborderManager->getSuborderlist($orderid,0,100);
-	$suborderCount = sizeof($suborderList);
+        if ($suborderList) {
+            $suborderCount = sizeof($suborderList);
+	} else {
+	    $suborderCount = 0;
+	}
 
 	if(!empty($msg)) {
   	  echo "<span class=cur>$msg</span>";
