@@ -24,6 +24,10 @@
   if(empty($range)){
     $range = 15;
   }
+
+  if (empty($start)) {
+	$start = 0;
+    }
 ?>
 <html><head>
 <title></title>
