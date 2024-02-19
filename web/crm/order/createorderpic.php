@@ -25,8 +25,10 @@
         require_once("../include/ccrmpicturepeer.inc.php");
         $db = new cDatabase;
         //mysql_query('set names utf8');
-        define('PIC_DIR','/data/MicaCRM/web/crm/upfile/pic/');
-        define('SPIC_DIR','/data/MicaCRM/web/crm/upfile/spic/');
+        //define('PIC_DIR','/data/MicaCRM/web/crm/upfile/pic/');
+	define('PIC_DIR','/var/www/html/web/crm/upfile/pic/');
+        //define('SPIC_DIR','/data/MicaCRM/web/crm/upfile/spic/');
+	define('SPIC_DIR','/var/www/html/web/crm/upfile/spic/');
         define('DISP_PIC_DIR','/upfile/pic/');
         define('DISP_SPIC_DIR','/upfile/spic/');
         $returnFlag = false;
