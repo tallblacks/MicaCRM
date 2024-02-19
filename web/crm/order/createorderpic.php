@@ -93,8 +93,9 @@
             }
         }
         if(!is_dir($titledir)){//没有目录
-	    print($titledir);
-            mkdir($titledir, 0777);
+	    if (!mkdir($titledir, 0777, true)) {
+              die('Failed to create directory: ' . $titledir);
+            }
         }
         
         //存储图片
