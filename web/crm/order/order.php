@@ -138,7 +138,11 @@
 	          }
 	      }
 	  }
-	  $orderCount = sizeof($orderList);
+          if($orderList){
+	    $orderCount = sizeof($orderList);
+	  }else{
+	    $orderList = 0;
+	  }
 
 	  if (!empty($msg)) {
   	  echo "<span class=cur>$msg</span>";
