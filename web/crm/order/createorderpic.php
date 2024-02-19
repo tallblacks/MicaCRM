@@ -86,8 +86,9 @@
             return $retarray;
         }
         if(!is_dir($imgdir)){//没有目录
-	    print($imgdir);
-            mkdir($imgdir, 0777);
+	    if (!mkdir($imgdir, 0777, true)) {
+              die('Failed to create directory: ' . $imgdir);
+            }
         }
         if(!is_dir($titledir)){//没有目录
 	    print($titledir);
