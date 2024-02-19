@@ -86,11 +86,9 @@
             return $retarray;
         }
         if(!is_dir($imgdir)){//没有目录
-	    print($imgdir);
             mkdir($imgdir, 0777);
         }
         if(!is_dir($titledir)){//没有目录
-	    print($titledir);
             mkdir($titledir, 0777);
         }
         
