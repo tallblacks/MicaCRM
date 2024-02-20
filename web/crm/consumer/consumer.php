@@ -81,7 +81,11 @@
     if ($_SESSION['SESS_TYPE'] == ADMIN || $agentid > 0) {//如果是管理员或者代理
         $total = $consumerManager->getConsumerPlusmemoCount($search, $agentid);
 	      $consumerList = $consumerManager->getConsumerlist($start, $range, $search, $agentid);
-	      $consumerCount = sizeof($consumerList);
+	      if($consumerList){
+	          $consumerCount = sizeof($consumerList);
+	      }else{
+	          $consumerCount = 0;
+	      }
 	  } else if ($_SESSION['SESS_TYPE'] == SECRETARY || $_SESSION['SESS_TYPE'] == XIAOMI) {//小蜜或超级小蜜
 	      $xiaomid = $_SESSION['SESS_USERID'];
 	      $total = $consumerManager->getConsumerXiaomiCount($search, $xiaomid);
